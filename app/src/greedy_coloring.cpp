@@ -49,7 +49,7 @@ void Graph::greedyColoring()
     // assigned to one of its adjacent vertices
     bool available[V];
     for (int cr = 0; cr < V; cr++)
-        available[cr] = false;
+        available[cr] = true;
 
     // Assign colors to remaining V-1 vertices
     for (int u = 1; u < V; u++)
@@ -59,20 +59,20 @@ void Graph::greedyColoring()
         list<int>::iterator i;
         for (i = adj[u].begin(); i != adj[u].end(); ++i)
             if (result[*i] != -1)
-                available[result[*i]] = true;
+                available[result[*i]] = false;
 
         // Find the first available color
         int cr;
         for (cr = 0; cr < V; cr++)
-            if (available[cr] == false)
+            if (available[cr])
                 break;
 
         result[u] = cr; // Assign the found color
 
-        // Reset the values back to false for the next iteration
+        // Reset the values back to true for the next iteration
         for (i = adj[u].begin(); i != adj[u].end(); ++i)
             if (result[*i] != -1)
-                available[result[*i]] = false;
+                available[result[*i]] = true;
     }
 
     // print the result
