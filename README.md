@@ -25,5 +25,6 @@
 
 ## Αποσπάσματα κώδικα
 
-* [help1.cpp](/app/src/help1.cpp): Ανάγνωση δεδομένων [car-s-92.stu](./app/datasets/car-f-92.stu), καταγραφή φοιτητών ανά εξέταση.
-
+* [read_data.cpp](/app/src/read_data.cpp): ανάγνωση δεδομένων [car-s-92.stu](./app/datasets/car-f-92.stu), καταγραφή φοιτητών ανά εξέταση.
+* [set_ops.cpp](/app/src/set_ops.cpp): εύρεση τομής ενός std::set<int> με ένα άλλο std::set<int>.
+* [greedy_coloring.cpp](./app/src/greedy_coloring.cpp): απεικόνιση γράφου ως λίστα γειτνίασης και greedy χρωματισμός του γράφου.
