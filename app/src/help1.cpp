@@ -24,7 +24,6 @@ void read_data(string fn, int students, int exams)
         student_id++;
         istringstream iss(line);
         int exam_id;
-        vector<int> exam_ids;
         while (iss >> exam_id)
         {
             exam_students[exam_id].insert(student_id);
