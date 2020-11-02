@@ -37,7 +37,8 @@ void read_data(string fn, int students, int exams)
     for (int i = 1; i <= exams; i++)
     {
         cout << "Exam " << i << " Enrolled students: ";
-        for(int student_id: exam_students[i]){
+        for (int student_id : exam_students[i]) // range based for
+        {
             cout << student_id << " ";
         }
         cout << endl;
@@ -46,4 +47,6 @@ void read_data(string fn, int students, int exams)
 
 int main()
 {
-    read_data("../datasets/car-f-92.stu", 18419, 543);
+    //    read_data("../datasets/car-f-92.stu", 18419, 543);
+    read_data("toy_e5_s6.stu", 6, 5);
+}
