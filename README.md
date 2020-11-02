@@ -29,3 +29,18 @@
 * [set_ops.cpp](/app/src/set_ops.cpp): εύρεση τομής ενός std::set<int> με ένα άλλο std::set<int>.
 * [random_numbers.cpp](./app/src/random_numbers.cpp), [random_numbers2.cpp](./app/src/random_numbers2.cpp): παραγωγή ψεύδο-τυχαίων ακέραιων τιμών στο διάστημα [1,V].
 * [greedy_coloring.cpp](./app/src/greedy_coloring.cpp): απεικόνιση γράφου ως λίστα γειτνίασης και greedy χρωματισμός του γράφου.
+
+
+## 4. Ένα Project σε Eclipse 
+
+Εγκατάσταση των λογισμικών:
+
+* [tdm-gcc](https://jmeubank.github.io/tdm-gcc/)
+* [Eclipse Installer](https://www.eclipse.org/downloads/packages/)
+
+
+[Το project σε eclipse (περιέχει το αρχείο read_data.cpp)](https://github.com/chgogos/alco/tree/main/sample_eclipse_project)
+
+
+![](/img/20201102_aads.svg)
+
