@@ -21,7 +21,6 @@ int main()
         cout << x << " ";
     }
 
-    cout << "Number of common elements: " << common.size() << endl;
 }
 
 /*
