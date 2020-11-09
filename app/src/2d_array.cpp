@@ -1,3 +1,5 @@
+// Ο χρήστης εισάγει μια τιμή Ν και δημιουργείται δυναμικά πίνακας Ν x N με 2 τρόπους
+
 #include <iostream>
 
 using namespace std;
@@ -61,3 +63,15 @@ int main()
 
     delete[] b;
 }
+
+/*
+Enter dimension N of N x N matrix: 3
+Dynamic 2D matrix N x N
+1 2 3
+4 5 6
+7 8 9
+Dynamic 1D array N * N used as a 2D matrix N x N
+1 2 3
+4 5 6
+7 8 9
+*/

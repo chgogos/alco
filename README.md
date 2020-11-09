@@ -39,13 +39,9 @@
 * [tdm-gcc](https://jmeubank.github.io/tdm-gcc/)
 * [Eclipse Installer](https://www.eclipse.org/downloads/packages/)
 
-
-[Το project σε eclipse (περιέχει το αρχείο read_data.cpp)](https://github.com/chgogos/alco/tree/main/sample_eclipse_project)
+[Το project σε eclipse (περιέχει μια έκδοση του αρχείου read_data.cpp)](https://github.com/chgogos/alco/tree/main/sample_eclipse_project)
 
 ---
 
-## Εικόνες whiteboard
-
-* [20201102](![](/img/20201102_aads.svg))
-* [20201109](![](/img/20201109_aads.png))
+[WHITEBOARDS](./whiteboards.md)
 
