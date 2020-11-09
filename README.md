@@ -30,7 +30,7 @@
 * [random_numbers.cpp](./app/src/random_numbers.cpp), [random_numbers2.cpp](./app/src/random_numbers2.cpp): παραγωγή ψεύδο-τυχαίων ακέραιων τιμών στο διάστημα [1,V].
 * [greedy_coloring.cpp](./app/src/greedy_coloring.cpp): απεικόνιση γράφου ως λίστα γειτνίασης και greedy χρωματισμός του γράφου.
 * [count_common_elements.cpp](./app/src/count_common_elements.cpp) εύρεση πλήθους κοινών στοιχείων ανάμεσα σε 2 vectors.
-
+* [2d_array.cpp](./app/src/2d_array.cpp) δυναμικός δισδιάστατος πίνακας στη C++ (και στη C).
 
 ## 4. Ένα Project σε Eclipse 
 
@@ -42,6 +42,10 @@
 
 [Το project σε eclipse (περιέχει το αρχείο read_data.cpp)](https://github.com/chgogos/alco/tree/main/sample_eclipse_project)
 
+---
 
-![](/img/20201102_aads.svg)
+## Εικόνες whiteboard
+
+* [20201102](![](/img/20201102_aads.svg))
+* [20201109](![](/img/20201109_aads.png))
 

@@ -74,7 +74,7 @@ void read_data(string fn, int students, int exams)
         for (int j = 0; j < exams; j++)
         {
             if (i == j){
-                adj_matrix[i * exams + j] = 0;
+                adj_matrix[i * exams + j] = 0; // adj_matrix[i][j]
                 continue;
             }
             int c = count_common_elements(exam_students[i + 1], exam_students[j + 1]);
