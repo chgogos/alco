@@ -1,3 +1,5 @@
+// εύρεση τομής συνόλων και πλήθους στοιχείων της τομής
+
 #include <iostream>
 #include <set>
 #include <vector>
@@ -18,6 +20,8 @@ int main()
     {
         cout << x << " ";
     }
+
+    cout << "Number of common elements: " << common.size() << endl;
 }
 
 /*

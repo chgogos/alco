@@ -1,3 +1,6 @@
+// έξοδος 5 τυχαίων τιμών στο διάστημα [0,V)
+// χρήση συναρτήσεων της C++
+
 #include <iostream>
 #include <random>
 #include <chrono>
@@ -12,3 +15,7 @@ int main()
     for (int i = 0; i < 5; i++)
         cout << dist(generator) << " ";
 }
+
+/*
+430 206 272 514 180 
+*/

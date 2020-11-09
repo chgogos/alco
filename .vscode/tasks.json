@@ -1,0 +1,24 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build greedy_coloring",
+            "command": "C:\\TDM-GCC-64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${workspaceFolder}\\app\\src\\greedy_coloring.cpp",
+                "-o",
+                "${workspaceFolder}\\app\\src\\greedy_coloring.exe"
+            ],
+            "options": {
+                "cwd": "C:\\TDM-GCC-64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "Generated task by Debugger"
+        },
+    ],
+    "version": "2.0.0"
+}

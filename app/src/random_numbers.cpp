@@ -1,3 +1,6 @@
+// έξοδος 5 τυχαίων τιμών στο διάστημα [0,V)
+// χρήση της srand() και rand() της C
+
 #include <iostream>
 #include <random>
 #include <ctime>
@@ -11,3 +14,7 @@ int main()
     for (int i = 0; i < 5; i++)
         cout << rand() % V + 1 << " ";
 }
+
+/*
+169 30 383 408 221 
+*/
