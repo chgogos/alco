@@ -1,6 +1,6 @@
 # Εργασίες 2020-2021
 
-## 1. Χρωματισμός γράφου (αλγόριθμοι και πολυπλοκότητα - προπτυχιακό)
+## 1. Χρωματισμός γραφήματος (αλγόριθμοι και πολυπλοκότητα - προπτυχιακό)
 
 ### Περίληψη εργασίας
 
@@ -10,6 +10,7 @@
 
 * Χρωματισμός γράφου [wikipedia](https://en.wikipedia.org/wiki/Graph_coloring).
 * [Graph Coloring Greedy Algorithm [O(V^2 + E) time complexity]](https://iq.opengenus.org/graph-colouring-greedy-algorithm/)
+* [Σκελετός τεχνικής αναφοράς](./doc/ΕΡΓΑΣΙΑ%20ΑΛΠΟ.docx)
 
 ---
 
