@@ -12,8 +12,8 @@ using namespace std;
 class Graph
 {
 private:
-    int V;
-    int *data;
+    int V;     // πλήθος των κορυφών του γραφήματος
+    int *data; // πίνακας γειτνίασης
 
 public:
     Graph(int v) : V(v)
@@ -44,6 +44,8 @@ public:
         return data[i * V + j];
     }
 
+    // επιστρέφει ένα set από ακεραίους που είναι
+    // οι αριθμοί κορυφών με τους οποίους συνδέεται απευθείας η κορυφή v
     set<int> get_neighbors(int v)
     {
         set<int> neighbors;
@@ -79,9 +81,9 @@ jump:
 
 int main()
 {
-    int V = 5; // number of vertices (exams)
+    int V = 5; // αριθμός κορυφών
 
-    Graph a_graph(V + 1); // data from toy_e5_s6.stu
+    Graph a_graph(V + 1); // δεδομένα από το toy_e5_s6.stu
     a_graph.insert_edge(1, 2, 1);
     a_graph.insert_edge(2, 1, 1);
     a_graph.insert_edge(1, 3, 1);
@@ -104,7 +106,10 @@ int main()
         cout << endl;
     }
 
-    int solution[] = {-1, 1, 2, 2, 1, 5}; // the first item is not used
+    // 1 --> κόκκινο
+    // 2 --> μπλε
+    // 3 --> μωβ
+    int solution[] = {-1, 1, 2, 2, 1, 3}; // το πρώτο στοιχείο του πίνακα δεν χρησιμοποιείται
 
     bool proper_coloring = check_coloring(a_graph, solution);
     if (proper_coloring)
@@ -116,7 +121,7 @@ int main()
         cout << "This is not a proper coloring" << endl;
     }
 
-    solution[4]=2; // assign "color" 2 to vertex 4
+    solution[4] = 2; // ανάθεση του "χρώματος" 2 στην κορυφή 4
     proper_coloring = check_coloring(a_graph, solution);
     if (proper_coloring)
     {
