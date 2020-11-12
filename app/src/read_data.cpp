@@ -13,7 +13,7 @@ using namespace std;
 int count_common_elements(set<int> s1, set<int> s2)
 {
     int c = 0;
-    for (int x : s1)
+    for (int x : s1) // range based for
     {
         for (int y : s2)
         {

@@ -32,6 +32,7 @@
 * [greedy_coloring.cpp](./app/src/greedy_coloring.cpp): απεικόνιση γράφου ως λίστα γειτνίασης και greedy χρωματισμός του γράφου.
 * [count_common_elements.cpp](./app/src/count_common_elements.cpp) εύρεση πλήθους κοινών στοιχείων ανάμεσα σε 2 vectors.
 * [2d_array.cpp](./app/src/2d_array.cpp) δυναμικός δισδιάστατος πίνακας στη C++ (και στη C).
+* [graph_example.cpp](./app/src/graph_example.cpp) μια υλοποίηση της κλάσης graph για το πρόβλημα και μια υλοποίηση της συνάρτησης ελέγχου έγκυρου χρωματισμού του γραφήματος
 
 ## 4. Ένα Project σε Eclipse 
 
