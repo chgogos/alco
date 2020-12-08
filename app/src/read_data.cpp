@@ -49,7 +49,7 @@ void read_data(string fn, int students, int exams)
         while (iss >> exam_id)
         {
             exam_students[exam_id].insert(student_id);
-            cout << "Student " << student_id << " is enrolled in exam " << exam_id << endl;
+            // cout << "Student " << student_id << " is enrolled in exam " << exam_id << endl;
         }
     }
     fs.close();
@@ -58,28 +58,31 @@ void read_data(string fn, int students, int exams)
 
     for (int i = 1; i <= exams; i++)
     {
-        cout << "Exam " << i << " Enrolled students: ";
+        // cout << "Exam " << i << " Enrolled students: ";
         for (int student_id : exam_students[i]) // range based for
         {
-            cout << student_id << " ";
+            // cout << student_id << " ";
         }
-        cout << endl;
+        // cout << endl;
     }
 
     // δημιουργία πίνακα γειτνίασης
-    cout << "Adjacency Matrix" << endl;
+    // cout << "Adjacency Matrix" << endl;
     int *adj_matrix = new int[exams * exams];
     for (int i = 0; i < exams; i++)
     {
         for (int j = 0; j < exams; j++)
         {
-            if (i == j){
+            if (i == j)
+            {
                 adj_matrix[i * exams + j] = 0; // adj_matrix[i][j]
                 continue;
             }
             int c = count_common_elements(exam_students[i + 1], exam_students[j + 1]);
             if (c > 0)
-                cout << i + 1 << " " << j + 1 << " " << c << endl;
+            {
+                // cout << i + 1 << " " << j + 1 << " " << c << endl;
+            }
             adj_matrix[i * exams + j] = c;
         }
     }
@@ -100,13 +103,33 @@ void read_data(string fn, int students, int exams)
     double cd = double(c) / double(exams * exams);
     cout << "Conflict Density: " << cd << endl;
 
+    int max = 0;
+    for (int i = 0; i < exams; i++)
+    {
+        int d = 0;
+        for (int j = 0; j < exams; j++)
+        {
+            if (adj_matrix[i * exams + j] > 0)
+            {
+                d++;
+            }
+        }
+        if (d > max)
+        {
+            max = d;
+        }
+    }
+
+    cout << "Degree Max: " << max << endl;
+
     delete[] adj_matrix;
 }
 
 int main()
 {
     //    read_data("../datasets/car-f-92.stu", 18419, 543);
-    read_data("../datasets/toy_e5_s6.stu", 6, 5);
+    read_data("../datasets/hec-s-92.stu", 2823, 81);
+    // read_data("../datasets/toy_e5_s6.stu", 6, 5);
 }
 
 /*
